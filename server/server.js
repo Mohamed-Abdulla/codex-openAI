@@ -1,4 +1,4 @@
-import express, { response } from "express";
+import express from "express";
 import * as dotenv from "dotenv";
 import cors from "cors";
 import { Configuration, OpenAIApi } from "openai";
@@ -46,4 +46,4 @@ app.post("/", async (req, res) => {
   }
 });
 
-app.listen(5000, () => console.log("server is listening on post http://localhost:5000"));
+app.listen(8000, () => console.log("server is listening on post http://localhost:5000"));
